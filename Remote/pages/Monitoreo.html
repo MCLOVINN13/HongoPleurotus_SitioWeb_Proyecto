@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+  <title>Monitoreo | Pleurotus</title>
+  <meta name="description" content="Panel de monitoreo de condiciones de cultivo para Pleurotus djamor." />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <a href="../index.html" class="logo">Pleurotus</a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navbar" aria-label="Navegación principal">
+      <ul>
+        <li><a href="../index.html#proyecto">Proyecto</a></li>
+        <li><a href="./Hongo.html">El Hongo</a></li>
+        <li><a class="active" href="./Monitoreo.html">Monitoreo</a></li>
+        <li><a href="./Proceso.html">Proceso</a></li>
+        <li><a href="./Acerca.html">Acerca de</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="site-main">
+    <section class="py-xl bg-base">
+      <div class="container text-center">
+        <h1 class="text-primary">Monitoreo en Tiempo Real</h1>
+        <p class="mx-auto mb-l" style="max-width:65ch;">Visualización de variables ambientales para el cultivo de Pleurotus.</p>
+      </div>
+    </section>
+
+    <section class="bg-neutral py-l">
+      <div class="container grid grid-cols-3">
+        <div class="card"><div class="card-content text-center"><h3 class="text-accent">Temperatura</h3><p class="h1" id="temp">-- °C</p><p id="temp-status">Cargando...</p></div></div>
+        <div class="card"><div class="card-content text-center"><h3 class="text-accent">Humedad</h3><p class="h1" id="hum">-- %</p><p id="hum-status">Cargando...</p></div></div>
+        <div class="card"><div class="card-content text-center"><h3 class="text-accent">CO₂</h3><p class="h1" id="co2">-- ppm</p><p id="co2-status">Cargando...</p></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer bg-base py-l text-center">
+    <div class="container">
+      <p class="text-base">Proyecto CECyTEA Jesús María - Programación 3°C</p>
+      <p class="text-neutral"><small>© <span id="year">2025</span>. Todos los derechos reservados.</small></p>
+    </div>
+  </footer>
+
+  <div class="nav-bg"></div>
+  <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/requests.js"></script>
+</body>
+</html>
