@@ -651,7 +651,11 @@ main {
    12. FOOTER
 --- --- --- --- --- --- --- --- --- --- */
 .footer {
-  padding: var(--space-l) var(--container-padding);
+  display: absolute;
+  position: center;
+  justify-items: center;
+  align-content: center ;
+  padding: var(--space-l);
   margin-top: var(--space-l);
   background: rgba(0, 0, 0, 0.3);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -731,7 +735,7 @@ main {
   }
 
   .container {
-    width: 95%;
+    width: 100%;
   }
 
   main {
@@ -887,4 +891,14 @@ main {
   .header .navbar a {
     color: var(--clr-text);
   }
+}
+
+.hdr-img {
+  width: 90vh;
+  height: 65vh;
+  object-fit: cover;
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
 }
